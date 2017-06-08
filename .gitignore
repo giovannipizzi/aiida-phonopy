@@ -1,3 +1,4 @@
 *.pyc
 *~
 .DS_Store
+aiida_phonopy.egg-info
