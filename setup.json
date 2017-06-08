@@ -1,0 +1,31 @@
+{
+    "version": "0.1.0",
+    "name": "aiida_phonopy",
+    "url": "http://github.com/giovannipizzi/aiida-phonopy",
+    "license": "MIT License",
+    "author": "Giovanni Pizzi",
+    "author_email": "giovanni.pizzi@epfl.ch",
+    "description": "This is a repository for plugins to run phonopy using the AiiDA (www.aiida.net) framework",
+    "classifiers": [
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 2.7",
+        "Development Status :: 4 - Beta"
+    ],
+    "install_requires": [
+        "aiida[ssh]"
+    ],
+    "entry_points": {
+        "aiida.calculations": [
+            "phonopy = aiida_phonopy.calculations.phonopy:PhonopyCalculation"
+         ],
+        "aiida.parsers": [
+            "phonopy = aiida_phonopy.parsers.phonopy:PhonopyParser"
+        ],
+        "aiida.data": [
+            "forceconstants2 = aiida_phonopy.data.forceconstants2:Forceconstants2Data"
+        ],
+        "aiida.workflows": [
+            "phonopy.frozenphonon = aiida_phonopy.workflows.frozenphonon:FrozenphononWorkflow"
+        ]             
+    }
+}
