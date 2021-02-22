@@ -1,4 +1,4 @@
-# aiida-phonopy
+# aiida-phonopy (old)
 AiiDA plugin for the phonopy code (phonons from finite differences)
 
 (Note: this is a very old unmaintained repository - refer to the [AiiDA plugin registry](https://aiidateam.github.io/aiida-registry/) for updated plugins for AiiDA.
